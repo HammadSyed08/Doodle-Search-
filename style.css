@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: "Roboto",serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #202124;
+    color: #E8EAED;
+    font-family: "Roboto", serif
+}
+.container{
+    min-height: 60vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.doodle_logo {
+    width: 100%;
+    max-width: 500px;
+}
+.doodle_logo img{
+    width: 100%;
+}
+.search_menu{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+.Search_bar {
+    border: 1px solid #5F6368;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Search_bar:hover , .Search_bar input:hover  {
+    background-color: #303134;
+    border-color: #303134;
+}
+.Search_bar:focus-within {
+    border-radius: 32px 32px 0 0;
+}
+.Search_bar img{
+    width: 18px;
+    margin-left: 20px;
+}
+.Search_bar input{
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    background-color: #202124;
+}
+.doodle_shapes {
+    position: absolute;
+    top:76vh;
+    right: 100px;
+    width: 130px;
+    height: 140px;
+}
+.close_icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 15px;
+    display: none;
+}
+.Search_bar:focus-within .close_icon {
+    display: block;
+}
+
+.suggestion_menu{
+    background-color: #303134;
+    border-color: #303134;
+    border-radius: 0 0 32px 32px;
+    font-size: 20px;
+    padding: 20px;
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+.suggestion_menu p img{
+    width: 18px;
+    margin-right: 10px;
+}
+.suggestion_menu p{
+    margin: 0px 10px 10px 0px;
+    padding: 10px;
+}
+.suggestion_menu p:hover {
+    background-color: #3C4043;
+}
+.Search_bar:focus-within + .suggestion_menu {
+    display: block;
+}
+.border_top{
+    border: 1px solid #5F6368;
+}

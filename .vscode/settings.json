@@ -1,0 +1,5 @@
+{
+    "css.lint.vendorPrefix": "warning",
+    "css.validate": true,
+    "html.autoCreateQuotes": true
+}
